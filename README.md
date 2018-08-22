@@ -40,17 +40,18 @@ sudo apt-get install python-numpy python-scipy python-qt4 python-qt4-dbus python
 Please keep in mind: Keeping the right directory structure is essential for running a script successfully. The program has the following hierarchy, if we assume you extracted the UMS code to the folder "yourfolder" at any location 
 on your harddisk. Then you have:
 
-yourfolder/
-           source/
-                  devices/            <- Here are all device-drivers located
-                  tools/              <- Needed for developers
-                  pyqtgraph/          <- Plotting functions. Do not touch
-                  template_scripts/   <- Help directory for beginning. But to actually run those demoscripts they NEED TO BE MOVED to "yourfolder" to run. 
-                  ums.py              <- This file consists all the basic functions like plotting voltage-time curves and so forth.
-                  _init_.py           <- Python interna. Do not touch
-                  manual.pdf          <- Read that! Describes all functions in ums.py and how you can use them
-                  README	          <- Useful information about UMS
-         yourtestscript.py
+| yourfolder/ |                   |                                                                                                                  |
+|-------------|-------------------|------------------------------------------------------------------------------------------------------------------|
+|             | source/           |                                                                                                                  |
+|             | devices/          | Here are all device drivers located                                                                              |
+|             | tools/            | Needed for developers                                                                                            |
+|             | pyqtgraph/        | Plotting functions. Do not touch                                                                                 |
+|             | template_scripts/ | Help directory for beginning. But to actually run those demoscripts they NEED to be moved to yourfolder to run.  |
+|             | ums.py            | This file consists all the basic functions like plotting voltage-time curves and so forth.                       |
+|             | _init_.py         | Python interna. Do not touch                                                                                     |
+|             | manual.pdf        | Read this! Describes all functions in ums.py and how you can use them                                            |
+|             | README            | Useful information about UMS and how to contribute                                                               |
+|             | yourtestscript.py |                                                                                                                  |
 
 Keep in mind that ALL your scripts need to be located directly inside "yourfolder". It will not work if you put them in subdirectories. This is due to some strange import issues of python, which I didn't fully understand.
 
@@ -136,7 +137,7 @@ Maybe you are not aware of this, but you are part of the privileged crowd on thi
 This is, on one hand very powerful, but also needs to be balanced with care in an ethical context. Maybe you have been hired by a big company and you are constantly monitored by some manager-stereotype guy, trying to influence you to do things 
 that do not feel right. Here some guidelines, on how to use your knowledge for the good sake only:
 
-#### *Rule 1:* Do not use your engineering skills to develop or produce products, that are aimed to kill people.####
+#### *Rule 1:* Do not use your engineering skills to develop or produce products, that are aimed to kill people. ####
 Sounds reasonable and commonsense, but often (especially in the US) is very well hidden in some sort of "greater-purpose project", for which the different defence-departments of governments are trying to misuse your skills.
 Even though this is wrong, one often hears explanation that sound like "...at least they spend it on something reasonable and not on weapons directly...". Nonsense. A university is not a military base. So military money or money 
 from weapon industry does not belong there! You can almost be sure that they *will* find a way to use your invention for the bad!
